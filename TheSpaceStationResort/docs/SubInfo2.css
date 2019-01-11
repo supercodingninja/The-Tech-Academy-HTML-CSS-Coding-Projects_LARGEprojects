@@ -307,13 +307,6 @@ body {
   
 @-webkit-keyframes spin {
     to {
-      -webkit-transform: rotateZ(360deg);
-              transform: rotateZ(360deg);
-    }
-}
-  
-@keyframes spin {
-    to {
       -webkit-transform: rotateZ(-360deg);
               transform: rotateZ(-360deg);
     }
