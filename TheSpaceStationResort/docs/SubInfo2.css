@@ -330,7 +330,7 @@ p {
 }
 
 .moon {
-    animation: spin 20s linear infinite;
+    animation: spin 35s linear infinite;
     background: none;
     height: 50px;
     pointer-events: none;
@@ -340,13 +340,56 @@ p {
 
 .moon img {
     height: 50px;
-    transform: translateX(-160px) translateY(-160px);
+    transform: translateX(-180px) translateY(-180px);
     width: 50px;
 }
 
-.earth img, .moon img {
+.earth img, .moon img, .spaceStation {
     border-radius: 50%;
     box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+}
+
+.spaceStation-container {
+    position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+}
+
+.spaceStation {
+    animation: spin 9s linear infinite;
+    background: transparent;
+    height: 35px;
+    pointer-events: none;
+    transform-origin: 15px;
+    width: 35px;
+}
+
+.spaceStation img {
+    height: 35px;
+    transform: translateX(90px) translateY(90px);
+    width: 35px;
+}
+
+.moon-container {
+    position: center;
+      top: calc(48% - 25px);
+      left: calc(48% - 25px);
+}
+
+.clock {
+    background: transparent;
+    height: 40px;
+    width: 154px;
+}
+
+.clock iframe {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: bisque;
+	text-shadow: 2px 2px 3px goldenrod;
 }
 
 @keyframes spin {
